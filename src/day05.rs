@@ -28,7 +28,7 @@ fn part1(input_lines: &[Vec<String>]) -> Vec<char> {
                 if reduced_polymer.is_empty() {
                     reduced_polymer.push(b);
                 }
-                else if ((reduced_polymer.last().unwrap().is_lowercase() && !b.is_lowercase()) || (!reduced_polymer.last().unwrap().is_lowercase() && b.is_lowercase())) && reduced_polymer.last().unwrap().eq_ignore_ascii_case(&b) {
+                else if (reduced_polymer.last().unwrap().is_lowercase() != b.is_lowercase())  && reduced_polymer.last().unwrap().eq_ignore_ascii_case(&b) {
                     reduced_polymer.pop();
                 }
                 else {
