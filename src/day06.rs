@@ -20,7 +20,9 @@ fn part1(input_lines: &[Vec<String>]) {
     let up = mines[0][1];
     let down = mines[0][1];
     for mine in mines {
-        if mine[0] <
+        if mine[0] < 2 {
+            return
+        }
     }
 }
 

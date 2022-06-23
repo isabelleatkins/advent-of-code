@@ -9,3 +9,4 @@ publish = ["metaswitch"]
 [dependencies]
 chrono = "0.4.19"
 mediumvec = "1.2.0"
+id_tree = "1.8.0"
