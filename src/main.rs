@@ -6,12 +6,13 @@ mod day05;
 mod day06;
 mod day07;
 mod day08;
+mod day09;
 mod utils;
 
 use std::env;
 
 type DayFunction = fn(&[Vec<String>]) -> (String, String);
-static DAY_FUNCTIONS: [DayFunction; 8] = [
+static DAY_FUNCTIONS: [DayFunction; 9] = [
     day01::day01,
     day02::day02,
     day03::day03,
@@ -20,6 +21,7 @@ static DAY_FUNCTIONS: [DayFunction; 8] = [
     day06::day06,
     day07::day07,
     day08::day08,
+    day09::day09,
 ];
 
 fn main() {
